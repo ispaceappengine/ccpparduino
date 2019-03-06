@@ -14,6 +14,7 @@ Nutzen: C String-> String = Array of characters (\0 terminated)
 
 char string[30]; // 29 chars + \0
 char string[30] = "This is a string";
+char string[] = "Length unknown";
 Der C String beinhaltet nicht den Text, sondern die Adresse wo sich diese Charakters befinden. "string" ist der Pointer.
 string = "Neuer string"; wird nicht gehen!
 Man muss folgendes machen: strcpy(string, "Neuer string");
