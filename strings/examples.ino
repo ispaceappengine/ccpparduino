@@ -27,3 +27,8 @@ char c[] = "abcd";
 char c[50] = "abcd";
 char c[] = {'a', 'b', 'c', 'd', '\0'};
 char c[5] = {'a', 'b', 'c', 'd', '\0'};
+
+
+String aStupidWasteOfResource = "Pissing away resources uselessly";
+char copy[50];
+aStupidWasteOfResource.toCharArray(copy, 50);
