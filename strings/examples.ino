@@ -21,3 +21,9 @@ strcpy(out_str, str); //wenn man String out_str neuen Text geben möchte
   Serial.println(arr3);  
   strcpy(arr2, arr3);
   Serial.println(arr2);  
+
+char arr[]; //geht nicht, da Größe fehlt
+char c[] = "abcd";
+char c[50] = "abcd";
+char c[] = {'a', 'b', 'c', 'd', '\0'};
+char c[5] = {'a', 'b', 'c', 'd', '\0'};
