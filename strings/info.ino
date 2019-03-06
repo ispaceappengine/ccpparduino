@@ -12,7 +12,7 @@ Strings (als Klasse) nutzen den dynamischen Speicher(Heap) im RAM.
 Nutzen: C String-> String = Array of characters (\0 terminated)
 \0 als Marker, der anzeigt wo String endet
 
-char string[30]; // 29 chars + \0
+char string[30]; // 29 chars + \0. Der 0er deutet das Ende vom Array an.
 char string[30] = "This is a string";
 char string[] = "Length unknown";
 Der C String beinhaltet nicht den Text, sondern die Adresse wo sich diese Charakters befinden. "string" ist der Pointer.
