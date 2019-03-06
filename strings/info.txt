@@ -42,6 +42,8 @@ void PrintString(const char *str) {
         p++;
     }
 }
+--------------------------------------------------------------------------------------
+https://www.tutorialspoint.com/arduino/arduino_strings.htm
 
-strcpy
-strcmp
+2 Arten von Strings: a) Array of characters b) String object
+Array ist dann "null terminated"
