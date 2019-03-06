@@ -1,1 +1,27 @@
 Arduino/C strings
+
+Arduino RAM:
+BSS area: statische und globale Variablen abgespeicehrt
+Stack: lokale Variablen
+Heap: für dynamische Variablen
+
+The Evils of Arduino Strings:
+https://hackingmajenkoblog.wordpress.com/2016/02/04/the-evils-of-arduino-strings/
+
+Strings (als Klasse) nutzen den dynamischen Speicher(Heap) im RAM.
+Nutzen: C String-> String = Array of characters (\0 terminated)
+\0 als Marker, der anzeigt wo String endet
+
+char string[30]; // 29 chars + \0
+char string[30] = "This is a string";
+Der C String beinhaltet nicht den Text, sondern die Adresse wo sich diese Charakters befinden. "string" ist der Pointer.
+string = "Neuer string"; wird nicht gehen!
+Man muss folgendes machen: strcpy(string, "Neuer string");
+
+char *string; //this format just creates a pointer to a string. Nur zum Lesen gedacht. Gibt Probleme wenn verändert wird
+char *string = "This is text"; //pointer to some text in memory
+Deswegen gleich von anfang an: 
+const char *string = "This is text";
+
+strcpy
+strcmp
