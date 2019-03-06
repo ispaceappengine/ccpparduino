@@ -18,10 +18,29 @@ Der C String beinhaltet nicht den Text, sondern die Adresse wo sich diese Charak
 string = "Neuer string"; wird nicht gehen!
 Man muss folgendes machen: strcpy(string, "Neuer string");
 
-char *string; //this format just creates a pointer to a string. Nur zum Lesen gedacht. Gibt Probleme wenn verändert wird
+char *string; //this format just creates a pointer to a string. Speicheradresse wo man den Text dann findet. Nur zum Lesen gedacht. Gibt Probleme wenn verändert wird
 char *string = "This is text"; //pointer to some text in memory
 Deswegen gleich von anfang an: 
 const char *string = "This is text";
+
+*pointer: Give me the value that is stored in the memory that pointer is pointing at
+
+Bei einer function die Argumente char *: Pointers to memory that I can edit
+const char *tag: der Compilter weiß, dass hier nie Änderung vergenommen wird
+void printVal(const char *tag, const char *value){
+  Serial.print(tag);
+  Serial.print(" = ");
+  Serial.print(value);
+}
+
+void PrintString(const char *str) {
+    const char *p;
+    p = str;
+    while (*p) {
+        Serial.print(*p);
+        p++;
+    }
+}
 
 strcpy
 strcmp
