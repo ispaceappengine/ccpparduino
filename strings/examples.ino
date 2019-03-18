@@ -42,3 +42,6 @@ for (int i = 0; i < 9; i++) {
   Serial.print(charBuf[i], HEX);
 }
 Serial.println();
+##############################
+ Serial.printf("Advertised Device: %s \n", advertisedDevice.toString().c_str());
+##############################
