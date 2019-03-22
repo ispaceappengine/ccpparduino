@@ -12,3 +12,17 @@ void loop () {
    Serial.print (“Total of array elements : ”) ;
    Serial.print(total) ;
 }
+########################################################################
+#define ARRAYSIZE 10
+String results[ARRAYSIZE] = { "uno", "duo", "tri" };
+
+void setup()
+{
+  Serial.begin(115200);
+  for (int i =0; i< ARRAYSIZE; i++) Serial.println(results[i]);
+}
+
+void loop()
+{
+}
+########################################################################
