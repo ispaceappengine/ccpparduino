@@ -6,6 +6,7 @@ M5.begin(); // initialize the M5Stack object
 //display
 //start top left corner, x to right, y down
 M5.Lcd.fillScreen(BLACK); // Lcd display RED, GREEN, BLUE, BLACK, WHITE
+M5.Lcd.setBrightness(brightness); //where brightness is 100 for on and 0 for off.
 
 //text
 M5.Lcd.setCursor(10, 10);
