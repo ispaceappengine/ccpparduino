@@ -5,3 +5,4 @@ One pressing will only reset the ESP32, double pressing will be treated as power
 M5.setWakeupButton(BUTTON_A_PIN); //press 1.button and m5stack wakes up
 M5.powerOFF();  // puts the whole machine to sleep
 esp_deep_sleep_start(); //putting the esp32 to sleep 
+esp_light_sleep_start()
