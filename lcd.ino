@@ -51,5 +51,12 @@ M5.Lcd.drawRightString(const char *string, int dX, int poY, int font);
 M5.Lcd.drawJpg(const uint8_t *jpg_data, size_t jpg_len, uint16_t x, uint16_t y);
 M5.Lcd.drawJpgFile(fs::FS &fs, const char *path, uint16_t x, uint16_t y);
 M5.Lcd.drawBmpFile(fs::FS &fs, const char *path, uint16_t x, uint16_t y);
-lcd.setRotation(degree)
+lcd.setRotation(degree) //90
 
+  #The M5Stack Core LCD has been initialized
+lcd.setColor(lcd.RED)
+lcd.setColor(lcd.ORANGE, LCD.DARKCYAN)
+
+  #The M5Stack Core LCD has been initialized
+lcd.setTextColor(lcd.PINK)
+lcd.setTextColor(lcd.ORANGE, LCD.DARKCYAN)
