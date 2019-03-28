@@ -60,3 +60,37 @@ lcd.setColor(lcd.ORANGE, LCD.DARKCYAN)
   #The M5Stack Core LCD has been initialized
 lcd.setTextColor(lcd.PINK)
 lcd.setTextColor(lcd.ORANGE, LCD.DARKCYAN)
+
+M5.Lcd.setTextColor(TFT_BLACK,TFT_WHITE);
+TFT_BLACK
+TFT_NAVY
+TFT_DARKGREEN
+TFT_DARKCYAN
+TFT_MAROON
+TFT_PURPLE
+TFT_OLIVE
+TFT_LIGHTGREY
+TFT_DARKGREY
+TFT_BLUE
+TFT_GREEN
+TFT_CYAN
+TFT_RED
+TFT_MAGENTA
+TFT_YELLOW
+TFT_WHITE
+TFT_ORANGE
+TFT_GREENYELLOW
+TFT_PINK
+
+Or you can define your own color based on red, green, and blue values, like this:
+#define MY_CUSTOM_COLOR M5.Lcd.color565(83,54,120) /* uint16_t color565(uint8_t r, uint8_t g, uint8_t b), */
+----------------------------------
+M5.Lcd.setBrightness(0);
+  //turns off screen. But the backlight is still there and shines through the screen.
+  //Therefore steht backlight brightness to 0
+  M5.Lcd.writecommand(ILI9341_DISPOFF); 
+
+  delay(4000);
+  M5.Lcd.setBrightness(100);
+  M5.Lcd.writecommand(ILI9341_DISPON); //turns on screen
+----------------------------------
