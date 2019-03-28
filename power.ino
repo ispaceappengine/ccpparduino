@@ -30,3 +30,15 @@ esp_sleep_enable_gpio_wakeup()
   M5.update();
 }
 ------------------------
+        M5.Power.setPowerBoostKeepOn()
+        M5.Power.setCharge(uint8_t mode);
+        M5.Power.setPowerBoostKeepOn(bool en);
+        M5.Power.isChargeFull();
+        M5.Power.setWakeupButton(uint8_t button);
+        M5.Power.powerOFF();
+         
+        bool setPowerBoostOnOff(bool en);
+        bool setPowerBoostSet(bool en);
+        bool setPowerVin(bool en);
+        bool setPowerWLEDSet(bool en);
+------------------------
