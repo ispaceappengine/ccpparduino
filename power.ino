@@ -17,3 +17,16 @@ esp_deep_sleep(10000000); //microseconds 1s=1.000.000us
 esp_sleep_enable_timer_wakeup() 
 gpio_wakeup_enable()
 esp_sleep_enable_gpio_wakeup()
+------------------------
+ setup(){
+  M5.setWakeupButton(BUTTON_A_PIN);
+}
+ void loop() {
+
+  if(M5.BtnA.wasPressed()) {
+    M5.powerOFF();
+  }
+
+  M5.update();
+}
+------------------------
