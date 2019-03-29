@@ -42,3 +42,9 @@ esp_sleep_enable_gpio_wakeup()
         bool setPowerVin(bool en);
         bool setPowerWLEDSet(bool en);
 ------------------------
+#define uS_TO_S_FACTOR 1000000  /* Conversion factor for micro seconds to seconds */
+#define TIME_TO_SLEEP  3        /* Time ESP32 will go to sleep (in seconds) */
+ 
+esp_sleep_enable_timer_wakeup(TIME_TO_SLEEP * uS_TO_S_FACTOR);
+esp_deep_sleep_start();
+------------------------
