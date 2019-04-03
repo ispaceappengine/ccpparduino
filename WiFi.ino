@@ -1,4 +1,5 @@
-Wie man 2 wifi verbindet und zu einem Server etwas schickt: http://cpham.perso.univ-pau.fr/LORA/WAZIUP/tuto/sensors/board_with_WiFi/board_with_WiFi.html
+Wie man 2 wifi verbindet und zu einem Server etwas schickt: 
+http://cpham.perso.univ-pau.fr/LORA/WAZIUP/tuto/sensors/board_with_WiFi/board_with_WiFi.html
 
 Example für wifi connect und Ausgabe MAC, IP, etc.. 
 https://www.arduino.cc/en/Guide/ArduinoWiFiShield#toc1
