@@ -49,6 +49,9 @@ char message[6] = "hello";
 char string[] = "Hello World";
 Serial.println(string);
 ##############################
+const char* host = "esp32";
+const char* ssid = "REPLACE_WITH_YOUR_SSID";
+const char* password = "REPLACE_WITH_YOUR_PASSWORD";
 ##############################
 ##############################
 ##############################
