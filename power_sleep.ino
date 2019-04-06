@@ -48,3 +48,15 @@ esp_sleep_enable_gpio_wakeup()
 esp_sleep_enable_timer_wakeup(TIME_TO_SLEEP * uS_TO_S_FACTOR);
 esp_deep_sleep_start();
 ------------------------
+#include <esp_wifi.h>
+#include <esp_bt.h>
+...
+  esp_wifi_stop();
+  esp_bt_controller_disable();
+  esp_deep_sleep_start();
+#############################################
+#############################################
+#############################################
+#############################################
+#############################################
+#############################################
