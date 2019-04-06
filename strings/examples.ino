@@ -45,3 +45,11 @@ Serial.println();
 ##############################
  Serial.printf("Advertised Device: %s \n", advertisedDevice.toString().c_str());
 ##############################
+char message[6] = "hello";
+char string[] = "Hello World";
+Serial.println(string);
+##############################
+##############################
+##############################
+##############################
+##############################
