@@ -53,6 +53,16 @@ const char* host = "esp32";
 const char* ssid = "REPLACE_WITH_YOUR_SSID";
 const char* password = "REPLACE_WITH_YOUR_PASSWORD";
 ##############################
+char carr[] = "c-string. array of chars";
+void setup() {
+    Serial.println(carr);
+    strcpy(carr, "fuuu"); //geht
+    Serial.println(carr);
+}
 ##############################
+char buffer[30];
+int anInt = 123;
+sprintf(buffer, "Number %d on the screen", anInt);
+Serial.println(buffer);
 ##############################
 ##############################
