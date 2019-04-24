@@ -65,4 +65,8 @@ int anInt = 123;
 sprintf(buffer, "Number %d on the screen", anInt);
 Serial.println(buffer);
 ##############################
+uses little memory
+Serial.print(F("Number "));
+Serial.print(anInt);
+Serial.println(F(" on the screen"));
 ##############################
