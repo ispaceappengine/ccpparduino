@@ -71,4 +71,14 @@ uses little memory
 Serial.print(F("Number "));
 Serial.print(anInt);
 Serial.println(F(" on the screen"));
-##############################
+############################################################
+%d	int	Dezimalzahl
+%u	unsigned int	Natürliche (Dezimal-)Zahl (pos. Zahl)
+%x, %X	unsigned int	Hexadezimalzahl
+%o	unsigned int	Oktalzahl
+%c	char	Einzelnes Zeichen (ASCII-Zeichen)
+%s	char *	Zeichenkette (String)
+%f	float, double	Gleitkommazahl
+%e, %E	float, double	Gleitkommazahl in Exponential-Darstellung
+%g, %G	float, double	Normale od. Exponential-Darstellung (was günstiger ist)
+############################################################
