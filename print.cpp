@@ -17,6 +17,9 @@ printf ("%80s","Dieser Text wird rechtsbuendig angezeigt.");
 1                                       100  
   Dieser Text wird rechtsbuendig angezeigt.
 ###########################################
+int i;
+  scanf ("%d", &i);
+  printf("Your input: %d", i);
 ###########################################
 ###########################################
 ###########################################
