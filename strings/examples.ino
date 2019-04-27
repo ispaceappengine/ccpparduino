@@ -1,6 +1,8 @@
 char myStr[6];
 myStr[0] = 'A';
 char myStr[] = "Hello";
+char z[100] = "I am learning C programming language.";
+printf("hi: %d %s", var, z);
 
 myStr[5] = 0; //null terminated
 
