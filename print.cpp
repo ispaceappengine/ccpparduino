@@ -8,7 +8,9 @@ C
 printf ("hello, world!");
 printf ("Global: %d\n", globale_variable); // int globale_variable;
 ###########################################
-
+int var = 5;
+char z[100] = "I am learning C programming language.";
+printf("hi: %d %s", var, z);
 ###########################################
 ###########################################
 ###########################################
