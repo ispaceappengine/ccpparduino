@@ -12,6 +12,10 @@ int var = 5;
 char z[100] = "I am learning C programming language.";
 printf("hi: %d %s", var, z);
 ###########################################
+printf ("%-10d%70d\n", 1, 1000); //muss 80 ergeben; - ist linksbündig
+printf ("%80s","Dieser Text wird rechtsbuendig angezeigt.");
+1                                       100  
+  Dieser Text wird rechtsbuendig angezeigt.
 ###########################################
 ###########################################
 ###########################################
