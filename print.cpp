@@ -29,11 +29,12 @@ cout << test[0][2] <<"some text"<< endl;
 cin>>test[0][2]; //input über console wird hier abgespeichert
 cout << test[0][2] <<"some text";
 ###########################################
-    char str[100];
+  char str[100];
 
-    cout << "Enter a string: ";
-    cin >> str;
-    cout << "You entered: " << str << endl;
+  cout << "Enter a string: ";
+  cin >> str; //the extraction operator >> works as scanf() in C and considers a space " " has a terminating character.
+  cout << "You entered: " << str << endl;
+  cin.get(str, 100); //To read the text containing blank space, cin.get
 ###########################################
 ###########################################
    
