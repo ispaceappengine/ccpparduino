@@ -6,6 +6,31 @@ for(int i=0; i<ANZAHL; i++){
   printf("%d. Element: %d \n", i, arr[i]);
 }
 ########################################################
+String fString[8];  //array of Strings
+for (i=0; i<7; i++)//       <-- Now we can use the "Array of Strings" to
+     fString[i] += splitStr();//   make life simple, using "for" loops!
+########################################################
+Array of Strings mit char
+const int NUMBER_OF_ELEMENTS = 10;
+const int MAX_SIZE = 12;
+
+char descriptions [NUMBER_OF_ELEMENTS] [MAX_SIZE] = { 
+ { "Furnace on" }, 
+ { "Furnace off" }, 
+ { "Set clock" }, 
+ { "Pump on" }, 
+ { "Pump off" }, 
+ { "Password:" }, 
+ { "Accepted" }, 
+ { "Rejected" }, 
+ { "Fault" }, 
+ { "Service rqd" }, 
+ };
+for (int i = 0; i < NUMBER_OF_ELEMENTS; i++)
+    Serial.println (descriptions [i]);
+  }
+########################################################
+
 int Feld[5];
 int daten[] = { 4, 10, -20 }; //da compiler 3 Elemente eh sieht
 
@@ -35,6 +60,15 @@ sizeof() liefert die Bytes die im Array zur Verfügung stehen
  printf("elemente im Array: %d \n",sizeof(arr)/sizeof(int)); //4
  printf("elemente im Array: %d \n",sizeof(arr2)/sizeof(long));//5
 ########################################################
+String array[] = { 
+  "John Smith", 
+  "Susie Maye", 
+  "Tom Jones", 
+  "Sarrah Jones", 
+  "Martha Mayes", 
+  "Brenda Howard", 
+  "Dan Evens"
+};
 ########################################################
 ########################################################
 ########################################################
