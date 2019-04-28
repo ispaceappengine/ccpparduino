@@ -23,6 +23,17 @@ String in C ist ein Array vom Typ char;
 char text[21]; //hier passt ein Text mit 20 Zeichen rein (wegen \0)
 char text[16] = { 'E','i','n',' ','l','a','n','g','e','r',' ','T','e','x','t','\0' };
 ########################################################
+int myarray[] = {123, 456, 789}; // 3 values stored
+int number_of_stored_values_in_myarray = sizeof(myarray)/sizeof(int);
+
+sizeof() liefert die Bytes die im Array zur Verfügung stehen
+
+ int arr[4] = {1,2,3,4};
+ long arr2[5] = {1,2,3,4,5};
+ printf("int sizeof in Bytes: %d \n",sizeof(arr)); //16
+ printf("long sizeof in Bytes: %d \n",sizeof(arr2));//40
+ printf("elemente im Array: %d \n",sizeof(arr)/sizeof(int)); //4
+ printf("elemente im Array: %d \n",sizeof(arr2)/sizeof(long));//5
 ########################################################
 ########################################################
 ########################################################
