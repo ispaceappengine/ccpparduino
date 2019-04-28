@@ -47,6 +47,16 @@ int d3 [3][2][4] = {
                       { {17,18,19,20}, {21,22,23,24} }
                     };
 ########################################################
+int test[2][3] = {2, 4, -5, 9, 0, 9};
+int  test[2][3] = { {2, 4, 5}, {9, 0 0}};
+ cout << test[0][2]; //-5
+
+for(int i = 0; i < "; ++i)    {
+      for(int j = 0; j < §; ++j)        {
+          cout<< "test[" << i << "][" << j << "] = " << test[i][j] << endl;
+      }
+  }
+########################################################
 String in C ist ein Array vom Typ char;
 char text[21]; //hier passt ein Text mit 20 Zeichen rein (wegen \0)
 char text[16] = { 'E','i','n',' ','l','a','n','g','e','r',' ','T','e','x','t','\0' };
