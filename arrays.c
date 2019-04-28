@@ -1,5 +1,16 @@
+Simple Erklärung für Arrays in C++: https://www.programiz.com/cpp-programming/arrays
+##################################################
 An array is a collection of data that holds fixed number of values of same type.
 dataType arrayName[arraySize];
+arrayName represents the memory address of first element of array
+
+void display(int m[5]);
+display(arrayName);
+
+formal argument int m[5] in function declaration converts to int* m;. 
+This pointer points to the same address pointed by the arrayName.
+PASS BY REFERENCE
+
 ########################################################
 #define ANZAHL 10
 int arr[ANZAHL], i;
