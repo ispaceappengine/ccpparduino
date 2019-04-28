@@ -1,3 +1,6 @@
+An array is a collection of data that holds fixed number of values of same type.
+dataType arrayName[arraySize];
+########################################################
 #define ANZAHL 10
 int arr[ANZAHL], i;
 
