@@ -29,6 +29,11 @@ cout << test[0][2] <<"some text"<< endl;
 cin>>test[0][2]; //input über console wird hier abgespeichert
 cout << test[0][2] <<"some text";
 ###########################################
+    char str[100];
+
+    cout << "Enter a string: ";
+    cin >> str;
+    cout << "You entered: " << str << endl;
 ###########################################
 ###########################################
    
