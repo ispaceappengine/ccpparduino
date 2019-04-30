@@ -1,6 +1,8 @@
 ALLE MÖGLICHEN PRINT FUNCTIONS
 https://en.cppreference.com/w/c/io/fprintf
 ###########################################
+  snprintf(msg, 255, "#%ld RSSI: %ld from Id: %s", msgCounter, rssi, addressChar);
+###########################################
 char greeting[6] = {'H', 'e', 'l', 'l', 'o', '\0'};
 printf("Greeting message: %s\n", greeting );
 ###########################################
