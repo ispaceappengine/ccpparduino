@@ -1,3 +1,6 @@
+ALLE MÖGLICHEN PRINT FUNCTIONS
+https://en.cppreference.com/w/c/io/fprintf
+###########################################
 char greeting[6] = {'H', 'e', 'l', 'l', 'o', '\0'};
 printf("Greeting message: %s\n", greeting );
 ###########################################
@@ -36,5 +39,14 @@ cout << test[0][2] <<"some text";
   cout << "You entered: " << str << endl;
   cin.get(str, 100); //To read the text containing blank space, cin.get
 ###########################################
+%s ...string
+%c ...char
+%ld...long int
+%lx...long unsigned int
+x prints an unsigned number in hexadecimal.
+o prints an unsigned number in octal.
+u prints an unsigned number in decimal.
+d prints a signed number in decimal.
+i prints a signed number in decimal.
 ###########################################
    
