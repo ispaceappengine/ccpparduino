@@ -51,4 +51,4 @@ u prints an unsigned number in decimal.
 d prints a signed number in decimal.
 i prints a signed number in decimal.
 ###########################################
-   
+Serial.printf("Sha256 from: %s to: %s \n",input4Sha256.c_str(), outputSha256.c_str());
