@@ -1,3 +1,5 @@
+TEXTE ÜBER C++ STRING: https://www.geeksforgeeks.org/stdstring-class-in-c/
+
 2 types of strings in C++
 + Strings that are objects of string class (The Standard C++ Library string class)
 + C-strings (C-style Strings) (Array of type char)
