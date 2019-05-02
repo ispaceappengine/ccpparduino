@@ -46,6 +46,7 @@ cout << test[0][2] <<"some text";
 %d ...int
 %ld...long int
 %lx...long unsigned int
+%p...Speicheradresse (z.B. 0x7ffdf25cef40)
 x prints an unsigned number in hexadecimal.
 o prints an unsigned number in octal.
 u prints an unsigned number in decimal.
