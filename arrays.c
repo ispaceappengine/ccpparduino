@@ -98,6 +98,11 @@ String array[] = {
 for(const string &text : texts)
     cout << "value of text: " << text << endl;
 ########################################################
+    To define a array of C string with a 2D array,  
+char foo[][4] = {"bar", "baz"}; // why not 3? 
+Note 1: For any multiple dimensional array with an initialization list, 
+    all dimension size except the first must be specified. Therefore, 
+char foo[][] = {"bar", "baz"};  // compile-time error. 
 ########################################################
 ########################################################
 ########################################################
