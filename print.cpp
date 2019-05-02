@@ -43,6 +43,7 @@ cout << test[0][2] <<"some text";
 ###########################################
 %s ... char*   (String str.c_str(), std::string str.c_str())
 %c ...char
+%d ...int
 %ld...long int
 %lx...long unsigned int
 x prints an unsigned number in hexadecimal.
