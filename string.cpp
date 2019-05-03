@@ -50,9 +50,13 @@ str = arr;
 char *str = string.c_str();
 #####################################################
 String vs string
-String abc ="";
-std::string xy= "adf";
-abc=xy.c_str();
+std::string----->String
+String SS ="";
+std::string std= "adf";
+SS=std.c_str();
+
+String------->std::string
+std::string std(SS.c_str())
 #####################################################
 #####################################################
 #####################################################
