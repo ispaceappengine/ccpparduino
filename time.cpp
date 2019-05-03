@@ -1,5 +1,6 @@
 Print local and UTC time: http://www.java2s.com/Code/C/Development/PrintlocalandUTCtime.htm
 Liste wie man Zeitstring formatiert: http://kirste.userpage.fu-berlin.de/chemnet/use/info/libc/libc_17.html
+https://www.epochconverter.com/programming/c
 ############################################################################################
 #include <WiFi.h>
 #include "time.h"
@@ -85,6 +86,24 @@ void printLocalTime() {
 ############################################################################################################
 Serial.printf("Sec since epoch: %lu", time(NULL));  (braucht time.h) 
 ############################################################################################################
+#include <stdio.h>
+#include <time.h>
+
+int main(void)
+{
+    time_t     now;
+    struct tm  ts;
+    char       buf[80];
+
+    // Get current time
+    time(&now);
+
+    // Format time, "ddd yyyy-mm-dd hh:mm:ss zzz"
+    ts = *localtime(&now);
+    strftime(buf, sizeof(buf), "%a %Y-%m-%d %H:%M:%S %Z", &ts);
+    printf("%s\n", buf);
+    return 0;
+}
 ############################################################################################################
 ############################################################################################################
 ############################################################################################################
