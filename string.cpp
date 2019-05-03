@@ -38,6 +38,16 @@ char str1[15];
 
    puts(str1);
 #####################################################
+CONVERT CHAR ARRAY TO STRING:
+char arr[ ] = "This is a test";
+string str(arr);
+
+//  You can also assign directly to a string.
+str = "This is another string";
+// or
+str = arr;
+----
+char *str = string.c_str();
 #####################################################
 #####################################################
 #####################################################
