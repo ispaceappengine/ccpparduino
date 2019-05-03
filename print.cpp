@@ -54,3 +54,13 @@ o prints an unsigned number in octal.
 i prints a signed number in decimal.
 ###########################################
 Serial.printf("Sha256 from: %s to: %s \n",input4Sha256.c_str(), outputSha256.c_str());
+##########################################
+https://en.wikibooks.org/wiki/C_Programming/stdio.h/puts
+puts("string"); puts(array of chars); 
+puts is a function used to output a string (plus a newline)
+puts prints the string as is (it does not process % codes).
+puts returns the number of bytes written
+
+To print a string without processing % codes, or outputting a newline, try:
+printf("%s", "welcome to WIKIPEDIA!!!");
+##########################################
