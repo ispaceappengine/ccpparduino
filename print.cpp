@@ -45,12 +45,12 @@ cout << test[0][2] <<"some text";
 %c ...char
 %d ...int
 %ld...long int
-%lx...long unsigned int
+%lu...long unsigned int
 %p...Speicheradresse (z.B. 0x7ffdf25cef40)
-x prints an unsigned number in hexadecimal.
-o prints an unsigned number in octal.
 u prints an unsigned number in decimal.
 d prints a signed number in decimal.
+x prints an unsigned number in hexadecimal.
+o prints an unsigned number in octal.
 i prints a signed number in decimal.
 ###########################################
 Serial.printf("Sha256 from: %s to: %s \n",input4Sha256.c_str(), outputSha256.c_str());
