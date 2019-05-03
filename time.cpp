@@ -1,4 +1,5 @@
 Print local and UTC time: http://www.java2s.com/Code/C/Development/PrintlocalandUTCtime.htm
+Liste wie man Zeitstring formatiert: http://kirste.userpage.fu-berlin.de/chemnet/use/info/libc/libc_17.html
 ############################################################################################
 #include <WiFi.h>
 #include "time.h"
