@@ -54,6 +54,7 @@ Used format: %Y-%m-%dT%H:%M:%SZ 2019-05-03T13:32:05Z
 ############################################################################################################
  AUFLISTUNG ALLER FUNCTIONS IN time.h
  https://fresh2refresh.com/c-programming/c-function/c-time-h-library-functions/
+ EXAMPLES DAZU: https://fresh2refresh.com/c-programming/c-time-related-functions/
 ###############################################################################
   /** @brief Gets the UTC time.
  * Used format: %Y-%m-%dT%H:%M:%SZ 2019-05-03T13:32:05Z
