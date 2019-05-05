@@ -1,3 +1,5 @@
+https://www.programiz.com/c-programming/c-structures
+
 A structure in C is a collection of variables of different data types under a single name. WIE KLASSE IN OOP SPRACHEN.
 
 struct Person
