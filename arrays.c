@@ -24,7 +24,7 @@ String fString[8];  //array of Strings
 for (i=0; i<7; i++)//       <-- Now we can use the "Array of Strings" to
      fString[i] += splitStr();//   make life simple, using "for" loops!
 ########################################################
-Array of Strings mit char
+C - Array of Strings mit char
 const int NUMBER_OF_ELEMENTS = 10;
 const int MAX_SIZE = 12;
 
@@ -43,6 +43,28 @@ char descriptions [NUMBER_OF_ELEMENTS] [MAX_SIZE] = {
 for (int i = 0; i < NUMBER_OF_ELEMENTS; i++)
     Serial.println (descriptions [i]);
   }
+
+char arr[MAX_NUMBER_STRINGS][MAX_STRING_SIZE]; 
+strcpy(arr[0], "blah"); //besser strlcpy()
+  
+//declares an array of two pointers to constant characters, and initializes them to point at two hardcoded string constants.
+const char *strings[2] = {"blah", "hmm"};
+printf(strings[0]);//blah
+strings[0]="fuu";
+printf(strings[0]); //fuu
+
+const char *ar[2];
+ar[0] = "blah";
+ar[1] = "hmm";
+ar[0] = "change";
+
+char *strings[]={ "one", "two", "three", NULL };
+int i=0;
+while(strings[i]) {
+  printf("%s\n", strings[i]);
+  //do something
+  i++;
+};
 ########################################################
 
 int Feld[5];
