@@ -6,7 +6,7 @@ TEXTE ÜBER C++ STRING: https://www.geeksforgeeks.org/stdstring-class-in-c/
 #####################################################
 SO NICHT: char *strPtr = "Compiler zeigt WARNUNG an";
 
-NUTZEN: const char *strPtr = "So einen Text deklarieren";
+NUTZEN: const char *strPtr = "DAs ist ein string literal"; strPtr = "neuer Text";
 String str = "String object."; //braucht aber dann .c_str() damit char* kommt
 std::string input = "std::cxx_11::string input";//braucht aber dann .c_str() damit char* kommt
 NICHT NUTZEN: char str[] = "C++"; // "C++" has 3 character, the null character \0 is added to the end of the string automatically.
