@@ -21,8 +21,14 @@ void setup()
   Serial.begin(115200);
   for (int i =0; i< ARRAYSIZE; i++) Serial.println(results[i]);
 }
-
 void loop()
-{
-}
+{}
+########################################################################
+char *strings[]={ "one", "two", "three", NULL };
+int i=0;
+while(strings[i]) {
+  printf("%s\n", strings[i]);
+  //do something
+  i++;
+};
 ########################################################################
