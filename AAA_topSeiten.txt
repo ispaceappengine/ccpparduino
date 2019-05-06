@@ -8,6 +8,7 @@ https://fresh2refresh.com/
 C
 http://www.java2s.com/Code/C/CatalogC.htm
 https://en.cppreference.com/w/
+https://www.tutorials.at/c/13-strukturen-dateizugriff.html
 
 C++
 https://en.cppreference.com/w/
