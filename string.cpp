@@ -60,6 +60,12 @@ std::string std(SS.c_str())
 String------>const char *
 SS.c_str() std.c_str()    
 #####################################################
+ https://stackoverflow.com/questions/191757/how-to-concatenate-a-stdstring-and-an-int
+    INT--->STRING
+float pi = 3.14159265359;
+std::string pi_str = std::to_string(pi);
+//with build_flags = -std=gnu++11
+
 #####################################################
 #####################################################
 #####################################################
