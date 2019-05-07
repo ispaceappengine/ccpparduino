@@ -11,7 +11,31 @@ Memory wird erst dann allokiert, wenn das Objekt initialisiert.
 
 Access modifier: private, public, protected
 Access data members and functions with "." obj.printName()
+C++ hat keine automatic garbage collection wie Java, sondern einen C++ Destructor.
 ######################################################################
 define outside of class: scope resolution :: operator along with class name and function name
 void Geeks::printname() 
 {
+muss aber dann in der class vorher deklariert werden
+returnType name();
+  
+######################################################################  
+Destructor is a special class function which destroys the object as soon as the scope of object ends. The destructor is called automatically by the compiler when the object goes out of scope.
+  class A{    
+    A()// constructor
+    {        cout << "Constructor called";    }
+
+    ~A()    // destructor
+    {        cout << "Destructor called";    }
+};
+
+int main()
+{
+    A obj1;   // Constructor Called
+    int x = 1
+    if(x)
+    {
+        A obj2;  // Constructor Called
+    }   // Destructor Called for obj2
+} 
+  ######################################################################  
