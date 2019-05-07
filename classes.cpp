@@ -4,6 +4,7 @@ Paradebeispiel: http://www.java2s.com/Tutorial/Cpp/0180__Class/Anarrayofpointers
 
 https://www.geeksforgeeks.org/c-classes-and-objects/
 http://www.trytoprogram.com/cplusplus-programming/class-object/
+https://www.studytonight.com/cpp/static-keyword.php
 
 Class: building block of c++, user defined data type. Blueprint for creating objects/instances. 
 Object is an instance of a Class. Class has own data members and functions.
