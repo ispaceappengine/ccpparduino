@@ -40,3 +40,5 @@ int main()
     }   // Destructor Called for obj2
 } 
   ######################################################################  
+Structs are used for lightweight objects such as Rectangle, color, Point, etc.
+  It is useful if you have data that is not intended to be modified after creation of struct.
