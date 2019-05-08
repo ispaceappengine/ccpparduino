@@ -1,5 +1,5 @@
 
-
++ Auflistung aller functions von map: http://www.cplusplus.com/reference/map/map/size/
 ###########################################################################
 #include <map>
 using namespace std;
@@ -10,10 +10,7 @@ std::map<std::string, std::string> mapper;
     std::map<std::string, std::string>::iterator it = mapper.begin();
     std::map<char, int> m = {
         {'a', 1},
-        {'b', 2},
-        {'c', 3},
-        {'d', 4},
-        {'e', 5},
+        {'b', 2},       
     };
     //   cout << "Hello, World!";
     //Serial.println(mapper["aa"]);
