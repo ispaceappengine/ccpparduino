@@ -30,6 +30,15 @@ if (directory.find(name) != directory.end())
    else
       cout << "Sorry, no listing for " << name << "\n";
 ###########################################################################
+  for (auto itr = mapBsBledo.begin (); itr != mapBsBledo.end (); itr++)
+    {
+      cout << itr->first << "\t" << itr->second.latestRssi << endl;
+      string str = it->first;      
+      BleDeviceWhere ble1 = itr->second;           
+    }
+    cout<<"size of map: "<<mapBsBledo.size()<<endl;
+    BleDeviceWhere ble2 = mapBsBledo["a"];
+    cout<<"printe ble2: "<<ble2.latestRssi<<endl;
 ###########################################################################
 ###########################################################################
 ###########################################################################
