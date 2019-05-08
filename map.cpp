@@ -25,6 +25,13 @@ std::map<std::string, std::string> mapper;
         Serial.print(t.second.c_str());        
     }
 ###########################################################################
+find/search in map
+
+if (directory.find(name) != directory.end()) 
+      cout << "The phone number for " << name
+           << " is " << directory[name] << "\n";
+   else
+      cout << "Sorry, no listing for " << name << "\n";
 ###########################################################################
 ###########################################################################
 ###########################################################################
