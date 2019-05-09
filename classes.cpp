@@ -1,4 +1,5 @@
 http://www.java2s.com/Tutorial/Cpp/0180__Class/Catalog0180__Class.htm
+C++ Classes and Objects: https://www.geeksforgeeks.org/c-classes-and-objects/
 Paradebeispiel: http://www.java2s.com/Tutorial/Cpp/0180__Class/Anarrayofpointerstoobjects.htm
 #################################################################
 
