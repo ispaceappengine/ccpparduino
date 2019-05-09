@@ -7,6 +7,7 @@ https://www.javatpoint.com/cpp-tutorial
 
 
 C
+https://www.learn-c.org/
 http://www.java2s.com/Code/C/CatalogC.htm
 https://en.cppreference.com/w/
 https://www.tutorials.at/c/13-strukturen-dateizugriff.html
