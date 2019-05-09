@@ -8,6 +8,7 @@ https://www.javatpoint.com/cpp-tutorial
 
 C
 https://www.learn-c.org/
+https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#The-for-Statement
 http://www.java2s.com/Code/C/CatalogC.htm
 https://en.cppreference.com/w/
 https://www.tutorials.at/c/13-strukturen-dateizugriff.html
