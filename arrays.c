@@ -126,5 +126,11 @@ Note 1: For any multiple dimensional array with an initialization list,
     all dimension size except the first must be specified. Therefore, 
 char foo[][] = {"bar", "baz"};  // compile-time error. 
 ########################################################
+    If the array is declared in a function, then the value is undefined. int x[10]; in a function means: take the ownership of 10-int-size area of memroy without doing any initialization. If the array is declared as a global one or as static in a function, then all elements are initialized to zero if they aren't initialized already.
 ########################################################
+int arr[3];
+int arrLength = sizeof(arr)/sizeof(int);
+for(int x=0;x<arrLength;x++){
+  printf("this is arr0 %d\n",arr[x]);
+}
 ########################################################
