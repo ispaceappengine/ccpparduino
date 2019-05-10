@@ -1,0 +1,8 @@
+* BESCHREIBUNG SETUP: https://code.visualstudio.com/docs/cpp/config-mingw
+* c++ compiler mingw in C:\Mingw-w64 
+* c_cpp_properties.json to specify the compiler path. in VSCode F1 und "c/c++" tippen.
+* Find the compilerPath setting and paste in the path to the bin folder. If you installed Mingw-w64 version 8.1.0 under C:\mingw-w64, the path will look like this: C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\g++.exe.
+* GNU Compiler Collection (GCC)
+* Microsoft Visual C++ (MSVC)
+
+* Extension easy c++ holen; Ordner in Win erstellen. In VS code diesen Ordner öffnen. F1>easy schreiben und create new c++ project. _G++/GDB Linux compiler nehmen. F1: C/C++ Edit configuration
