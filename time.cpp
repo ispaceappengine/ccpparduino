@@ -2,7 +2,20 @@ Print local and UTC time: http://www.java2s.com/Code/C/Development/Printlocaland
 Liste wie man Zeitstring formatiert: http://kirste.userpage.fu-berlin.de/chemnet/use/info/libc/libc_17.html
 https://www.epochconverter.com/programming/c
 + Auflistung aller functions: https://en.cppreference.com/w/c/chrono
-############################################################################################
+############################################
+  char            fmt[64], buf[64];
+    struct timeval  tv;
+    struct tm       *tm;
+
+    gettimeofday(&tv, NULL);
+    if((tm = localtime(&tv.tv_sec)) != NULL)
+    {
+            strftime(fmt, sizeof fmt, "%Y-%m-%d %H:%M:%S.%%06u %z", tm);
+            snprintf(buf, sizeof buf, fmt, tv.tv_usec);
+            printf("'%s'\n", buf); 
+    }
+################################################
+
 #include <WiFi.h>
 #include "time.h"
 
