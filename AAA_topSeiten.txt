@@ -1,3 +1,6 @@
+cheatsheets:
+C - https://learnxinyminutes.com/docs/c/
+
 Tutorials zu allen Sprachen: 
 http://www.java2s.com/
 https://thispointer.com/
