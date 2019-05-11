@@ -43,12 +43,14 @@ cout << test[0][2] <<"some text";
   cout << "You entered: " << str << endl;
   cin.get(str, 100); //To read the text containing blank space, cin.get
 ###########################################
-%s ... char*   (String str.c_str(), std::string str.c_str())
+\n...new line, \t...tabulator, \v...vertical tab
+%s ...char*   (String str.c_str(), std::string str.c_str())
 %c ...char
 %d ...int
-%ld...long int
+%ld...long 
 %lu...long unsigned int
 %p...Speicheradresse (z.B. 0x7ffdf25cef40)
+%%...prints %
 u prints an unsigned number in decimal.
 d prints a signed number in decimal.
 x prints an unsigned number in hexadecimal.
