@@ -23,3 +23,33 @@ void swap(int* n1, int* n2)
 ###########################################
 Union wie struct, nur kann Union nur ein einzelnes member gleichzeitig abfragen(wert langfristig halten) und die größe von union ist nur so groß wie das größte member.
 ###########################################
+// Structs are just collections of data, the members are allocated sequentially,
+// in the order they are written:
+struct rectangle {
+  int width;
+  int height;
+};
+
+// It's not generally true that
+// sizeof(struct rectangle) == sizeof(int) + sizeof(int)
+// due to potential padding between the structure members (this is for alignment
+// reasons). [1]
+
+void function_1()
+{
+  struct rectangle my_rec;
+
+  // Access struct members with .
+  my_rec.width = 10;
+  my_rec.height = 20;
+
+  // You can declare pointers to structs
+  struct rectangle *my_rec_ptr = &my_rec;
+
+  // Use dereferencing to set struct pointer members...
+  (*my_rec_ptr).width = 30;
+
+  // ... or even better: prefer the -> shorthand for the sake of readability
+  my_rec_ptr->height = 10; // Same as (*my_rec_ptr).height = 10;
+}
+##############################################
