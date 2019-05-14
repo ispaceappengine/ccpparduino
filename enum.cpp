@@ -6,3 +6,4 @@ enum week { Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday };
 
 week day;
 day = Friday;
+
