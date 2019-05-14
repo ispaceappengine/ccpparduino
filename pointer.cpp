@@ -1,3 +1,5 @@
+Bei "chars" in C wird der Var der "literal string" zugewiesen und nicht dem *Var!
+   
 printPointer("fuu");
 void printPointer(const char *str){
    const char *p;
@@ -43,7 +45,7 @@ int feld[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }, i2;
   for (i2 = 0; i2 < 10; i2++) 
     printf ("Element %d = %d\n", i2, *(feld + i2) );
 ################################################################
-int* ptr;
+int *ptr;
 int a[5];
 ptr = &a[2];  // &a[2] is the address of third element of a[5].
 ################################################################
