@@ -1,14 +1,13 @@
 ALLE MÖGLICHEN PRINT FUNCTIONS
 https://en.cppreference.com/w/c/io/fprintf
 ###########################################
-STRING -> C-string (char *str) mit str.c_str()
 ###########################################  
   snprintf(msg, 255, "#%ld RSSI: %ld from Id: %s", msgCounter, rssi, addressChar);
 ###########################################
 char greeting[6] = {'H', 'e', 'l', 'l', 'o', '\0'};
 printf("Greeting message: %s\n", greeting );
 ###########################################
-name = "Tester";
+std::string name = "Tester";
 Serial.println(name.c_str()); 
 ###########################################
 C
@@ -60,12 +59,12 @@ i prints a signed number in decimal.
 Serial.printf("Sha256 from: %s to: %s \n",input4Sha256.c_str(), outputSha256.c_str());
 ##########################################
 https://en.wikibooks.org/wiki/C_Programming/stdio.h/puts
-puts("string"); puts(array of chars);
+puts("literal string"); puts(array of chars); int puts(const char *str);
 
-GEHT NICHT: string str="a"; puts(str); int puts(const char *str);
+GEHT NICHT: string str="a"; puts(str); 
 NUTZEN puts(str.c_str());
 
-puts is a function used to output a (C)"string" (plus a newline)
+puts is a function used to output a c-string (plus a newline)
 puts prints the string as is (it does not process % codes).
 puts returns the number of bytes written
 
