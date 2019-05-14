@@ -1,5 +1,7 @@
 
 + Auflistung aller functions von map: http://www.cplusplus.com/reference/map/map/size/
+https://thispointer.com/stdmap-tutorial-part-1-usage-detail-with-examples/
+SHORT INTRO: https://www.cprogramming.com/tutorial/stl/stlmap.html
 ###########################################################################
 #include <map>
 using namespace std;
@@ -40,6 +42,17 @@ if (directory.find(name) != directory.end())
     BleDeviceWhere ble2 = mapBsBledo["a"];
     cout<<"printe ble2: "<<ble2.latestRssi<<endl;
 ###########################################################################
+m["key1"] = "val1";
+m.insert(pair<string,string>("key2", "val2"));
+m.insert({"key3", "val3"}); // c++11
+And traverse it in c++11:
+
+for( auto it = m.begin(); it != m.end(); ++it )
+{
+  cout << it->first; // key
+  string& value = it->second;
+  cout << ":" << value << endl;
+}
 ###########################################################################
 ###########################################################################
 ###########################################################################
