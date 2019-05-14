@@ -4,9 +4,10 @@ TEXTE ÜBER C++ STRING: https://www.geeksforgeeks.org/stdstring-class-in-c/
 + Strings that are objects of string class (The Standard C++ Library string class)
 + C-strings (C-style Strings) (Array of type char)
 #####################################################
-SO NICHT: char *strPtr = "Compiler zeigt WARNUNG an";
+SO NICHT: char *strPtr = "Compiler zeigt WARNUNG an"; //man kann teile des Strings ändern
 
-NUTZEN: const char *strPtr = "DAs ist ein string literal"; strPtr = "neuer Text";
+//man kann Teile des strings nicht ändern, aber neuen string zuweisen
+NUTZEN: const char *strPtr = "DAs ist ein string literal"; strPtr = "neuer Text"; 
 String str = "String object."; //braucht aber dann .c_str() damit char* kommt
 std::string input = "std::cxx_11::string input";//braucht aber dann .c_str() damit char* kommt
 NICHT NUTZEN: char str[] = "C++"; // "C++" has 3 character, the null character \0 is added to the end of the string automatically.
