@@ -21,7 +21,8 @@ int main() {
     std::cout << "Hello Easy C++ project!" << std::endl;
     system("pause");
 }
-
+######################################
+https://github.com/Microsoft/vscode-cpptools/issues/583
 ######################################
 c_cpp_properties.json
 {
