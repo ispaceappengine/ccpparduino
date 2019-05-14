@@ -1,3 +1,9 @@
+TODO:
+https://stackoverflow.com/questions/15310846/creating-a-class-object-in-c
+https://stackoverflow.com/questions/48507427/c-when-to-use-the-new-keyword-when-creating-a-class-object
+
+
+
 http://www.java2s.com/Tutorial/Cpp/0180__Class/Catalog0180__Class.htm
 C++ Classes and Objects: https://www.geeksforgeeks.org/c-classes-and-objects/
 Paradebeispiel: http://www.java2s.com/Tutorial/Cpp/0180__Class/Anarrayofpointerstoobjects.htm
