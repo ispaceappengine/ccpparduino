@@ -39,16 +39,14 @@ char str1[15];
 
    puts(str1);
 #####################################################
-CONVERT CHAR ARRAY TO STRING:
+char carr[]----> string:
 char arr[ ] = "This is a test";
 string str(arr);
 
 //  You can also assign directly to a string.
 str = "This is another string";
-// or
-str = arr;
+str = arr; // or
 ----
-char *str = string.c_str();
 #####################################################
 std::string----->String
 String SS ="";
@@ -61,8 +59,9 @@ std::string std(SS.c_str())
 String------>const char *
 SS.c_str() std.c_str()    
 #####################################################
- https://stackoverflow.com/questions/191757/how-to-concatenate-a-stdstring-and-an-int
-    INT--->STRING
+INT--->STRING
+https://stackoverflow.com/questions/191757/how-to-concatenate-a-stdstring-and-an-int
+    
 float pi = 3.14159265359;
 std::string pi_str = std::to_string(pi);
 //with build_flags = -std=gnu++11
