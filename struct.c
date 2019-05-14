@@ -1,7 +1,8 @@
 https://www.programiz.com/c-programming/c-structures
 https://www.geeksforgeeks.org/structures-c/
 
-A structure in C is a collection of variables of different data types under a single name. WIE KLASSE IN OOP SPRACHEN, haben aber keine functions wie Klassen.
+A structure in C is a collection of variables of different data types under a single name. WIE KLASSE IN OOP SPRACHEN, haben aber 
+keine functions wie Klassen.
 
 struct Person
 {
@@ -21,7 +22,8 @@ get: person1.age  per->age
 swap( &num1, &num2);
 void swap(int* n1, int* n2)
 ###########################################
-Union wie struct, nur kann Union nur ein einzelnes member gleichzeitig abfragen(wert langfristig halten) und die größe von union ist nur so groß wie das größte member.
+Union wie struct, nur kann Union nur ein einzelnes member gleichzeitig abfragen(wert langfristig halten) und die größe von union ist nur
+so groß wie das größte member.
 ###########################################
 // Structs are just collections of data, the members are allocated sequentially,
 // in the order they are written:
