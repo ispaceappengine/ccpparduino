@@ -7,6 +7,8 @@
 + https://thispointer.com//how-to-use-vector-efficiently/
 + Ein Tutorial: https://www.codeguru.com/cpp/cpp/cpp_mfc/stl/article.php/c4027/C-Tutorial-A-Beginners-Guide-to-stdvector-Part-1.htm
 ################################################################
+SEHR GUTES BEISPIEL WO VECTOR ALS ARG AN FUNCTION ÜBERGEBEN WIRD:http://www.cplusplus.com/forum/beginner/115630/
+################################################################
 Unlike arrays, vectors are dynamically sized
 ################################################################
 vector<dataType> vectorName;
@@ -14,9 +16,19 @@ vector<dataType> vectorName(size);//if you want to provide a size
 vectorName.push_back(value);//adding an item to a vector
 vectorName[index]; //accessing an index of a vector
 vectorName[index] = value; //changing a value at a certain index
+
+vector<pair<string,double>> revenue;
+revenue.push_back(std::make_pair("string",map[i].second));
+
+string s = v[0].second;
 ################################################################
 Init vector in 5 different ways: https://www.geeksforgeeks.org/initialize-a-vector-in-cpp-different-ways/
 ################################################################
+void print_vector( vector < pair<int, string> > &v){
+        for(int i = 0; i < v.size(); i ++){
+                cout << v[i].second << endl;
+        }
+}
 ################################################################
 ################################################################
 ################################################################
