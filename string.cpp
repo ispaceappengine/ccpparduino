@@ -15,8 +15,23 @@ NICHT NUTZEN: char str[] = "C++"; // "C++" has 3 character, the null character \
 char str[4] = "C++";
 char str[100] = "C++"; //not needed to use up all the space
 
+char *carr[] = {"This is string 1", "This is string 2"}; //array of c-strings
+
 char s[] == char *
 void display(char s[]) == void display(char *);
+#####################################################
+#include <array>
+ std::array<std::string, 3> texts = {"Apple", "Banana", "Orange"};
+    // ^ An array of 3 elements with the type std::string
+
+  for(const auto& text : texts) {   // Range-for!
+      std::cout << text << std::endl;
+  }
+
+ std::array<std::string, 3> texts2 = {"aaaaa", "bbbbb", "cccccc"};
+  for(auto s : texts2){
+    cout <<s.c_str();
+  }
 #####################################################
 void display(char *); //deklaration
 display("abc11");
