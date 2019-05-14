@@ -25,20 +25,12 @@ for (i=0; i<7; i++)//       <-- Now we can use the "Array of Strings" to
      fString[i] += splitStr();//   make life simple, using "for" loops!
 ########################################################
 C - Array of Strings mit char
-const int NUMBER_OF_ELEMENTS = 10;
+const int NUMBER_OF_ELEMENTS = 2;
 const int MAX_SIZE = 12;
 
 char descriptions [NUMBER_OF_ELEMENTS] [MAX_SIZE] = { 
  { "Furnace on" }, 
- { "Furnace off" }, 
- { "Set clock" }, 
- { "Pump on" }, 
- { "Pump off" }, 
- { "Password:" }, 
- { "Accepted" }, 
- { "Rejected" }, 
- { "Fault" }, 
- { "Service rqd" }, 
+ { "Furnace off" }
  };
 for (int i = 0; i < NUMBER_OF_ELEMENTS; i++)
     Serial.println (descriptions [i]);
@@ -58,10 +50,10 @@ ar[0] = "blah";
 ar[1] = "hmm";
 ar[0] = "change";
 
-char *strings[]={ "one", "two", "three", NULL };
+char *carr[]={ "one", "two", "three", NULL };
 int i=0;
 while(strings[i]) {
-  printf("%s\n", strings[i]);
+  printf("%s\n", carr[i]);
   //do something
   i++;
 };
@@ -107,20 +99,26 @@ sizeof() liefert die Bytes die im Array zur Verfügung stehen
  printf("elemente im Array: %d \n",sizeof(arr2)/sizeof(long));//5
 ########################################################
 String array[] = { 
-  "John Smith", 
-  "Susie Maye", 
-  "Tom Jones", 
-  "Sarrah Jones", 
-  "Martha Mayes", 
+  "John Smith",  
   "Brenda Howard", 
   "Dan Evens"
 };
 ########################################################
-    string texts[] = {"Apple", "Banana", "Orange"};
+char *carr[] ={"xy","fu"};
+for(auto &e:carr){
+  puts(e);
+}
+
+std::string strarr[] = {"uno", "due"};
+for (auto &e : strarr) {
+  printf("Some text in strarr: %s\n", e.c_str());
+}
+    
+string texts[] = {"Apple", "Banana", "Orange"};
 for(const string &text : texts)
-    cout << "value of text: " << text << endl;
+  cout << "value of text: " << text << endl;
 ########################################################
-    To define a array of C string with a 2D array,  
+    To define an array of C string with a 2D array,  
 char foo[][4] = {"bar", "baz"}; // why not 3? 
 Note 1: For any multiple dimensional array with an initialization list, 
     all dimension size except the first must be specified. Therefore, 
@@ -134,3 +132,14 @@ for(int x=0;x<arrLength;x++){
   printf("this is arr0 %d\n",arr[x]);
 }
 ########################################################
+char **argv: pointer to a pointer to a char; and an array argument is demoted to a pointer (when sent as arguent to function), 
+so pointer to pointer to char, or char **.
+char *argv[]: array of pointers to char
+char *a[] = {"foo", "bar", "baz"};
+printf("%d\n", sizeof a / sizeof *a);
+########################################################
+
+########################################################
+########################################################
+########################################################
+    
