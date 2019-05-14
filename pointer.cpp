@@ -15,8 +15,11 @@ void hello(const char *str) { Serial.println(str); }
 ################################################################
   int zahl = 100;
   printf ("Value von zahl: %d\n", zahl);	//100
-  int *p1 = &zahl;
-  //100, * holt den Wert, der sich in der Speicheradresse befindet
+  int *p1 = &zahl; //Bei der init geht Übergabe mit Adressoperator, ansonsten nicht
+
+  int *p2; p2=&zahl; p2*=zahl; //so muss dann gemacht werden 
+
+//100, * holt den Wert, der sich in der Speicheradresse befindet
   //die in p1 drin ist
   printf ("Value von *p1: %d\n", *p1);
   printf ("Value von p1: %d\n", p1);	//Speicheradresse: 1822935687
@@ -24,13 +27,13 @@ void hello(const char *str) { Serial.println(str); }
   int *p2;
   p2 = &zahl;
   printf ("Value von *p2: %d\n", *p2);	//100
-  printf ("Value von p2: %d\n", p2);	//Speicheradresse: 1822935687
+  printf ("Value von p2: %p\n", p2);	//Speicheradresse: 1822935687
 
   int zahl2 = 33;
   //p2 = zahl2; //ERROR invalid conversion from int to int*
   p2 = &zahl2;
   printf ("Value von *p2: %d\n", *p2);	//33
-  printf ("Value von p2: %d\n", p2);	//Speicheradresse: 35939284973
+  printf ("Value von p2: %p\n", p2);	//Speicheradresse: 35939284973
 
   int a = 100, *pa = &a;	/* a wird mit 100 initialisiert, pa zeigt gleich auf a */
   printf ("a = %d\n", a);	//100
@@ -51,7 +54,7 @@ ptr = &a[2];  // &a[2] is the address of third element of a[5].
 ################################################################
     int *pa;
     int a = 100;
-    pa = &a; //pa hat die Adresse von a
+    pa = &a; //pa hat die Adresse von a   WICHTIG
     cout <<"*pa: "<<*pa<<endl; //100
     *pa = 500; //*pa und a haben nun gleichen Wert 500
     
