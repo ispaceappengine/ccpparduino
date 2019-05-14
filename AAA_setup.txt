@@ -6,8 +6,9 @@ the path will look like this: C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\min
 * GNU Compiler Collection (GCC)
 * Microsoft Visual C++ (MSVC)
 
-* Extension "easy c++" holen; Ordner in Win erstellen. In VS code diesen Ordner öffnen. F1>easy schreiben und create new c++ project. _G++/GDB Linux compiler nehmen. F1: C/C++ Edit configuration. c_cpp_properties.json überprüfen.
-* Path setzen: C:\MinGW\bin
+* Extension "easy c++" holen; Ordner in Win erstellen. In VS code diesen Ordner öffnen. F1>easy schreiben und create new c++ project.
+_G++/GDB Linux compiler nehmen. F1: C/C++ Edit configuration. c_cpp_properties.json überprüfen.
+* Path in win setzen: C:\MinGW\bin 
 * SETUP: https://medium.com/@jerrygoyal/run-debug-intellisense-c-c-in-vscode-within-5-minutes-3ed956e059d6
 * SETUP ausführlich mit mingw: https://code.visualstudio.com/docs/cpp/config-mingw
 
@@ -19,6 +20,28 @@ the path will look like this: C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\min
 int main() {
     std::cout << "Hello Easy C++ project!" << std::endl;
     system("pause");
+}
+
+######################################
+c_cpp_properties.json
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "C:\\MinGW\\bin\\gcc.exe",
+            "cStandard": "c11",
+            "intelliSenseMode": "clang-x64"
+        }
+    ],
+    "version": 4
 }
 ######################################
 launch.json
