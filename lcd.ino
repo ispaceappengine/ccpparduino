@@ -1,3 +1,5 @@
+AUFLISTUNG ALLER FARBEN UND FUNCTIONS: http://forum.m5stack.com/topic/41/lesson-1-1-lcd-graphics
+
 //snippets about M5Stack Lcd
 //lcd x_width=320, y_height=240
 
