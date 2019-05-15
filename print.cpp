@@ -47,7 +47,9 @@ cout << test[0][2] <<"some text";
 %c ...char
 %d ...int
 %ld...long 
-%lu...long unsigned int
+%lu...long unsigned int 
+%zu...size_t unsigned
+%zd...ssize_t signed
 %p...Speicheradresse (z.B. 0x7ffdf25cef40)
 %%...prints %
 u prints an unsigned number in decimal.
