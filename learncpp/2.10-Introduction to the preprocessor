@@ -1,0 +1,10 @@
+https://www.learncpp.com/cpp-tutorial/introduction-to-the-preprocessor/
+
+
+The preprocessor is best thought of as a separate program that manipulates the text in each code file.
+Preprocessor directives start with # symbol.
+Text changes only temporarily in-memory.
+In C++, a macro is a rule that defines how input text is converted into replacement output text.
+
+Object-like macros: #define MY_NAME "Alex"
+The conditional compilation preprocessor directives : #ifdef, #ifndef, and #endif.
