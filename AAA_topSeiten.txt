@@ -18,6 +18,7 @@ https://en.cppreference.com/w/
 https://www.tutorials.at/c/13-strukturen-dateizugriff.html
 
 C++
+https://www.learncpp.com/
 https://en.cppreference.com/w/
 http://www.java2s.com/Code/Cpp/CatalogCpp.htm
 classes: http://www.java2s.com/Tutorials/C/Cpp_Tutorial/1000__Cpp_Class.htm
