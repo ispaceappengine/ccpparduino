@@ -44,10 +44,12 @@ cout << test[0][2] <<"some text";
 ###########################################
 \n...new line, \t...tabulator, \v...vertical tab
 %s ...char*   (String str.c_str(), std::string str.c_str())
-%c ...char
-%d ...int
-%ld...long 
-%lu...long unsigned int 
+%c ...char int8_t (unsigned 0 .. 255, signed -128...127)
+%d ...int (int8_t, 16)
+%ld...long (int32_t)
+%u... unsigned integer (uint8_t)
+%lu...long unsigned int (uint32_t 0 .. 4,294,967,295)
+%lf...double pi=3.14156 (%.2lf liefert 3.14)
 %zu...size_t unsigned
 %zd...ssize_t signed
 %p...Speicheradresse (z.B. 0x7ffdf25cef40)
