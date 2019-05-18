@@ -12,12 +12,14 @@ https://www.hackerearth.com/practice/
 
 C
 https://www.learn-c.org/
+C PROGRAMMING TUTORIAL: https://fresh2refresh.com/c-programming/c-data-types/
 https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#The-for-Statement
 http://www.java2s.com/Code/C/CatalogC.htm
 https://en.cppreference.com/w/
 https://www.tutorials.at/c/13-strukturen-dateizugriff.html
 
 C++
+Kurze C++ Syntax Reference: https://syntaxdb.com/ref/cpp/constructor
 https://www.learncpp.com/
 https://en.cppreference.com/w/
 http://www.java2s.com/Code/Cpp/CatalogCpp.htm
