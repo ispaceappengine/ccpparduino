@@ -52,6 +52,9 @@ cout << test[0][2] <<"some text";
 %zd...ssize_t signed
 %p...Speicheradresse (z.B. 0x7ffdf25cef40)
 %%...prints %
+bool x = true; printf("%d\n", x); // prints 1
+printf("%s", x ? "true" : "false");...bool
+
 u prints an unsigned number in decimal.
 d prints a signed number in decimal.
 x prints an unsigned number in hexadecimal.
