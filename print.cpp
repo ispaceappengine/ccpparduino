@@ -49,6 +49,7 @@ cout << test[0][2] <<"some text";
 %ld...long (int32_t)
 %u... unsigned integer (uint8_t)
 %lu...long unsigned int (uint32_t 0 .. 4,294,967,295)
+%f... float (10.5)
 %lf...double pi=3.14156 (%.2lf liefert 3.14)
 %zu...size_t unsigned
 %zd...ssize_t signed
