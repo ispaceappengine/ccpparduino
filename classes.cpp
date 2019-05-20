@@ -49,3 +49,23 @@ int main()
   ######################################################################  
 Structs are used for lightweight objects such as Rectangle, color, Point, etc.
   It is useful if you have data that is not intended to be modified after creation of struct.
+
+    void useRawPointer()
+{
+    // using a raw pointer
+    Song* pSong = new Song("Nothing on You", "Bruno Mars"); 
+
+    // use pSong...
+
+    // don't forget to delete!
+    delete pSong;   
+}
+######################################################################
+
+######################################################################
+
+######################################################################
+
+######################################################################
+
+######################################################################
