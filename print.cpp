@@ -48,7 +48,7 @@ cout << test[0][2] <<"some text";
 %d ...int (int8_t, 16)
 %ld...long (int32_t)
 %u... unsigned integer (uint8_t)
-%lu...long unsigned int (uint32_t 0 .. 4,294,967,295)
+%lu...long unsigned int (uint32_t 0 .. 4,294,967,295) millis()
 %f... float (10.5)
 %lf...double pi=3.14156 (%.2lf liefert 3.14)
 %zu...size_t unsigned
@@ -65,6 +65,9 @@ o prints an unsigned number in octal.
 i prints a signed number in decimal.
 ###########################################
 Serial.printf("Sha256 from: %s to: %s \n",input4Sha256.c_str(), outputSha256.c_str());
+snprintf (msg, 50, "#%ld RSSI send to mqtt: %ld", value, WiFi.RSSI());
+Serial.print("Publish message: ");
+Serial.println(msg);
 ##########################################
 https://en.wikibooks.org/wiki/C_Programming/stdio.h/puts
 puts("literal string"); puts(array of chars); int puts(const char *str);
