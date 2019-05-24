@@ -61,7 +61,18 @@ Structs are used for lightweight objects such as Rectangle, color, Point, etc.
     delete pSong;   
 }
 ######################################################################
-
+BleDeviceWhere *ble1 = new BleDeviceWhere();
+//ble1->macHashed = "id1"; \
+Serial.printf("This is ble1 mit id: %s \n", (ble1->macHashed).c_str());
+  
+BleDeviceWhere *bleArray[10];
+for (int index = 0; index < 10; index++) {
+  bleArray[index] = new BleDeviceWhere();
+  // bleArray[index]->macHashed = "id" + index;
+}
+  for (int i = 0; i < 10; i++) {
+  // Serial.printf("ID %s \n", (bleArray[i]->macHashed).c_str());
+}
 ######################################################################
 
 ######################################################################
