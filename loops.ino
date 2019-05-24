@@ -32,3 +32,7 @@ while(strings[i]) {
   i++;
 };
 ########################################################################
+std::array<std::string, 3> texts = {"Apple", "Banana", "Orange"};
+  for (auto s : texts) {
+    Serial.println(s.c_str());
+  }
