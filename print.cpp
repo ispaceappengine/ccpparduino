@@ -42,8 +42,9 @@ cout << test[0][2] <<"some text";
   cout << "You entered: " << str << endl;
   cin.get(str, 100); //To read the text containing blank space, cin.get
 ###########################################
+format specifier
 \n...new line, \t...tabulator, \v...vertical tab
-%s ...char*   (String str.c_str(), std::string str.c_str())
+%s ...char*, char[] array   (String str.c_str(), std::string str.c_str())
 %c ...char int8_t (unsigned 0 .. 255, signed -128...127)
 %d ...int (int8_t, 16)
 %ld...long (int32_t)
