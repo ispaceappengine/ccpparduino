@@ -42,7 +42,9 @@ cout << test[0][2] <<"some text";
   cout << "You entered: " << str << endl;
   cin.get(str, 100); //To read the text containing blank space, cin.get
 ###########################################
-format specifier
+format specifier, List of all format specifiers in C programming:
+https://codeforwin.org/2015/05/list-of-all-format-specifiers-in-c-programming.html
+
 \n...new line, \t...tabulator, \v...vertical tab
 %s ...char*, char[] array   (String str.c_str(), std::string str.c_str())
 %c ...char int8_t (unsigned 0 .. 255, signed -128...127)
