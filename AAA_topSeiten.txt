@@ -11,6 +11,7 @@ https://www.hackerearth.com/practice/
 
 
 C
+https://codeforwin.org/2018/11/c-preprocessor-directives-include-define-undef-conditional-directives.html
 https://www.learn-c.org/
 C PROGRAMMING TUTORIAL: https://fresh2refresh.com/c-programming/c-data-types/
 https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#The-for-Statement
