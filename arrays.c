@@ -107,6 +107,7 @@ String array[] = {
 char *carr[] ={"xy","fu"};
 for(auto &e:carr){
   puts(e);
+  Serial.printf("This element: %s\n",e);
 }
 
 std::string strarr[] = {"uno", "due"};
