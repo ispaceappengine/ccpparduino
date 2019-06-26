@@ -104,6 +104,8 @@ String array[] = {
   "Dan Evens"
 };
 ########################################################
+std::string arrStr[] == const char *arrChar[]
+
 char *carr[] ={"xy","fu"};
 for(auto &e:carr){
   puts(e);
