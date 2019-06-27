@@ -92,5 +92,12 @@ texts[0] = "uno";
 for(const string &text : texts)
     cout << "value of text: " << text << endl;
 #####################################################
+tolower(): https://www.tutorialspoint.com/c_standard_library/c_function_tolower.htm
+for(int i = 0; str[i]; i++){
+  str[i] = tolower(str[i]);
+}
+or
+for ( ; *p; ++p) *p = tolower(*p);
+
 #####################################################
 #####################################################
