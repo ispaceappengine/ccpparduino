@@ -38,3 +38,14 @@ https://thispointer.com//c-interview-questions/(c++)
 
 EXAMPLES ARDUINO
 https://www.arduino.cc/en/Tutorial/BuiltInExamples
+
+C examples
+https://www.w3resource.com/c-programming-exercises/for-loop/index.php
+https://codeforwin.org/2015/11/string-programming-exercises-and-solutions-in-c.html
+https://www.studytonight.com/c/programs/
+https://www.programiz.com/c-programming/examples
+https://beginnersbook.com/2015/02/simple-c-programs/
+https://www.learn-c.org/
+
+
+
