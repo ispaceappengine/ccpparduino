@@ -15,6 +15,27 @@ https://github.com/neoxharsh/Pixel-Fun-M5Stack/blob/master/PixelFun.ino
  
  M5.update();
 ############################################################
+  void loop() {
+
+    // Send every TX_INTERVAL millis
+    static uint32_t last = 0;
+    if (0 == last || millis() - last > TX_INTERVAL) {
+        last = millis();
+        send();
+    }
+
+    // Send on button press
+    M5.update();
+    if (M5.BtnA.wasPressed()) {
+        send();
+    }
+    if (M5.BtnC.wasPressed()) {
+        _poweroff = true;
+    }
+
+    ttn_loop();
+
+}
 ############################################################
 ############################################################
 ############################################################
