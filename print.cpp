@@ -90,7 +90,7 @@ scanf("%d %d", &num1, &num2);  // Get input for the two variables
 sum = num1 + num2;
 printf("%d\n", sum);   // Print the sum
 ##########################################
-
+Serial.println(accelgyro.testConnection() ? "MPU9250 connection successful" : "MPU9250 connection failed");
 ##########################################
 ##########################################
 ##########################################
