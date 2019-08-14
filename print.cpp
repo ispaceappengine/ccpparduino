@@ -71,6 +71,16 @@ Serial.printf("Sha256 from: %s to: %s \n",input4Sha256.c_str(), outputSha256.c_s
 snprintf (msg, 50, "#%ld RSSI send to mqtt: %ld", value, WiFi.RSSI());
 Serial.print("Publish message: ");
 Serial.println(msg);
+###############################################
+ // Read the WHO_AM_I register, this is a good test of communication
+  byte c = IMU.readByte(MPU9250_ADDRESS, WHO_AM_I_MPU9250); //
+  Serial.print("MPU9250 ");
+  Serial.print("I AM ");
+  Serial.print(c, HEX);
+  Serial.print(" I should be ");
+  Serial.println(0x71, HEX);
+     Serial.println(c, HEX);
+     M5.Lcd.printf("Could not connect to MPU9250: 0x%x \n",c);
 ##########################################
 https://en.wikibooks.org/wiki/C_Programming/stdio.h/puts
 puts("literal string"); puts(array of chars); int puts(const char *str);
