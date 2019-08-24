@@ -19,6 +19,7 @@ https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#The-for-Statement
 http://www.java2s.com/Code/C/CatalogC.htm
 https://en.cppreference.com/w/
 https://www.tutorials.at/c/13-strukturen-dateizugriff.html
+AUFLISTUNG 11 C BÜCHER: https://electronicsforu.com/resources/free-c-programming-ebooks
 
 C++
 Kurze C++ Syntax Reference: https://syntaxdb.com/ref/cpp/constructor
